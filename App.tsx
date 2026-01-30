@@ -1,13 +1,13 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import Navbar from './components/Navbar';
-import ProductCard from './components/ProductCard';
-import ProductModal from './components/ProductModal';
-import Footer from './components/Footer';
-import AdminDashboard from './components/AdminDashboard';
-import AIStylist from './components/AIStylist';
-import { PRODUCTS as INITIAL_PRODUCTS, INITIAL_FOOTER_CONFIG } from './constants';
-import { Category, Product, FooterConfig } from './types';
+import Navbar from './components/Navbar.tsx';
+import ProductCard from './components/ProductCard.tsx';
+import ProductModal from './components/ProductModal.tsx';
+import Footer from './components/Footer.tsx';
+import AdminDashboard from './components/AdminDashboard.tsx';
+import AIStylist from './components/AIStylist.tsx';
+import { PRODUCTS as INITIAL_PRODUCTS, INITIAL_FOOTER_CONFIG } from './constants.ts';
+import { Category, Product, FooterConfig } from './types.ts';
 
 const App: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
